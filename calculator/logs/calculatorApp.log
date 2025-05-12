@@ -634,3 +634,393 @@
 2025-05-12 19:01:04,776 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics reporters closed
 2025-05-12 19:01:04,783 INFO o.a.k.c.u.AppInfoParser [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] App info kafka.consumer for consumer-calculator-1 unregistered
 2025-05-12 19:01:04,784 INFO o.s.c.l.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] calculator: Consumer stopped
+2025-05-12 20:52:26,111 INFO o.s.b.StartupInfoLogger [main] Starting CalculatorApplicationTests using Java 21.0.2 with PID 150929 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/calculator)
+2025-05-12 20:52:26,121 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-05-12 20:52:27,068 INFO o.a.k.c.c.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-05-12 20:52:27,094 INFO o.a.k.c.t.i.KafkaMetricsCollector$StateLedger [main] initializing Kafka metrics collector
+2025-05-12 20:52:27,244 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.8.1
+2025-05-12 20:52:27,245 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 70d6ff42debf7e17
+2025-05-12 20:52:27,245 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1747079547243
+2025-05-12 20:52:27,248 INFO o.a.k.c.c.i.LegacyKafkaConsumer [main] [Consumer clientId=consumer-calculator-1, groupId=calculator] Subscribed to topic(s): calculator_topic
+2025-05-12 20:52:27,261 INFO o.s.b.StartupInfoLogger [main] Started CalculatorApplicationTests in 1.46 seconds (process running for 2.174)
+2025-05-12 20:52:27,454 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:52:27,456 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:52:27,457 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:52:27,552 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:52:27,554 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:52:27,557 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:52:27,675 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:52:27,676 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:52:27,676 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:52:27,889 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-05-12 20:52:27,889 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Request joining group due to: consumer pro-actively leaving the group
+2025-05-12 20:52:27,889 INFO o.a.k.c.c.i.LegacyKafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Unsubscribed all topics or patterns and assigned partitions
+2025-05-12 20:52:27,890 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-05-12 20:52:27,891 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Request joining group due to: consumer pro-actively leaving the group
+2025-05-12 20:52:27,894 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics scheduler closed
+2025-05-12 20:52:27,894 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12 20:52:27,894 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-05-12 20:52:27,894 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics reporters closed
+2025-05-12 20:52:27,899 INFO o.a.k.c.u.AppInfoParser [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] App info kafka.consumer for consumer-calculator-1 unregistered
+2025-05-12 20:52:27,900 INFO o.s.c.l.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] calculator: Consumer stopped
+2025-05-12 20:54:26,699 INFO o.s.b.StartupInfoLogger [main] Starting CalculatorApplicationTests using Java 21.0.2 with PID 152541 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/calculator)
+2025-05-12 20:54:26,700 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-05-12 20:54:27,859 INFO o.a.k.c.c.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-05-12 20:54:27,888 INFO o.a.k.c.t.i.KafkaMetricsCollector$StateLedger [main] initializing Kafka metrics collector
+2025-05-12 20:54:28,051 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.8.1
+2025-05-12 20:54:28,053 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 70d6ff42debf7e17
+2025-05-12 20:54:28,053 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1747079668051
+2025-05-12 20:54:28,056 INFO o.a.k.c.c.i.LegacyKafkaConsumer [main] [Consumer clientId=consumer-calculator-1, groupId=calculator] Subscribed to topic(s): calculator_topic
+2025-05-12 20:54:28,070 INFO o.s.b.StartupInfoLogger [main] Started CalculatorApplicationTests in 1.72 seconds (process running for 2.583)
+2025-05-12 20:54:28,283 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:54:28,285 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:54:28,285 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:54:28,378 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:54:28,379 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:54:28,379 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:54:28,481 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:54:28,482 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:54:28,482 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:54:28,735 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 20:54:28,736 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12 20:54:28,736 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-05-12 20:54:28,797 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-05-12 20:54:28,797 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Request joining group due to: consumer pro-actively leaving the group
+2025-05-12 20:54:28,798 INFO o.a.k.c.c.i.LegacyKafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Unsubscribed all topics or patterns and assigned partitions
+2025-05-12 20:54:28,800 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-05-12 20:54:28,800 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Request joining group due to: consumer pro-actively leaving the group
+2025-05-12 20:54:28,807 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics scheduler closed
+2025-05-12 20:54:28,807 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12 20:54:28,808 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-05-12 20:54:28,809 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics reporters closed
+2025-05-12 20:54:28,816 INFO o.a.k.c.u.AppInfoParser [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] App info kafka.consumer for consumer-calculator-1 unregistered
+2025-05-12 20:54:28,817 INFO o.s.c.l.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] calculator: Consumer stopped
+2025-05-12 21:56:27,034 INFO o.s.b.StartupInfoLogger [main] Starting CalculatorApplicationTests using Java 21.0.2 with PID 178973 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/calculator)
+2025-05-12 21:56:27,037 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-05-12 21:56:30,928 INFO o.a.k.c.c.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-05-12 21:56:31,086 INFO o.a.k.c.t.i.KafkaMetricsCollector$StateLedger [main] initializing Kafka metrics collector
+2025-05-12 21:56:31,820 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.8.1
+2025-05-12 21:56:31,824 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 70d6ff42debf7e17
+2025-05-12 21:56:31,827 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1747083391816
+2025-05-12 21:56:31,840 INFO o.a.k.c.c.i.LegacyKafkaConsumer [main] [Consumer clientId=consumer-calculator-1, groupId=calculator] Subscribed to topic(s): calculator_topic
+2025-05-12 21:56:31,873 INFO o.s.b.StartupInfoLogger [main] Started CalculatorApplicationTests in 5.722 seconds (process running for 8.45)
+2025-05-12 21:56:32,388 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 21:56:32,391 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2025-05-12 21:56:32,391 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-05-12 21:56:32,517 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 21:56:32,518 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2025-05-12 21:56:32,519 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-05-12 21:56:32,672 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 21:56:32,673 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2025-05-12 21:56:32,673 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-05-12 21:56:32,877 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 21:56:32,878 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2025-05-12 21:56:32,878 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-05-12 21:56:33,236 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Node -1 disconnected.
+2025-05-12 21:56:33,238 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2025-05-12 21:56:33,239 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-05-12 21:56:33,944 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-05-12 21:56:33,944 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Request joining group due to: consumer pro-actively leaving the group
+2025-05-12 21:56:33,945 INFO o.a.k.c.c.i.LegacyKafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Unsubscribed all topics or patterns and assigned partitions
+2025-05-12 21:56:33,956 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-05-12 21:56:33,957 INFO o.a.k.c.c.i.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-calculator-1, groupId=calculator] Request joining group due to: consumer pro-actively leaving the group
+2025-05-12 21:56:33,973 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics scheduler closed
+2025-05-12 21:56:33,977 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12 21:56:33,982 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-05-12 21:56:33,983 INFO o.a.k.c.m.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics reporters closed
+2025-05-12 21:56:34,021 INFO o.a.k.c.u.AppInfoParser [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] App info kafka.consumer for consumer-calculator-1 unregistered
+2025-05-12 21:56:34,023 INFO o.s.c.l.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] calculator: Consumer stopped

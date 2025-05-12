@@ -993,3 +993,1009 @@ org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exit
 2025-05-12T18:12:40.368+01:00  WARN 9507 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
 2025-05-12T18:12:41.378+01:00  INFO 9507 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
 2025-05-12T18:12:41.380+01:00  WARN 9507 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:46:53.178+01:00  INFO 96567 --- [rest] [restartedMain] com.example.rest.RestApplication         : Starting RestApplication using Java 21.0.2 with PID 96567 (/home/kaufman/IntelliJProjects/kafka-rest-api/rest/target/classes started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api)
+2025-05-12T19:46:53.180+01:00  INFO 96567 --- [rest] [restartedMain] com.example.rest.RestApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T19:46:53.215+01:00  INFO 96567 --- [rest] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-12T19:46:53.215+01:00  INFO 96567 --- [rest] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-12T19:46:53.910+01:00  INFO 96567 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-12T19:46:53.921+01:00  INFO 96567 --- [rest] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-12T19:46:53.921+01:00  INFO 96567 --- [rest] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-12T19:46:53.947+01:00  INFO 96567 --- [rest] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-12T19:46:53.947+01:00  INFO 96567 --- [rest] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2025-05-12T19:46:54.283+01:00  INFO 96567 --- [rest] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-12T19:46:54.305+01:00  INFO 96567 --- [rest] [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-12T19:46:54.346+01:00  INFO 96567 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T19:46:54.347+01:00  INFO 96567 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T19:46:54.348+01:00  INFO 96567 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747075614345
+2025-05-12T19:46:54.657+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka: Nome ou serviço desconhecidos
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:54.705+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:54.808+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:54.987+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:55.444+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:56.409+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:57.231+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:58.147+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:46:59.150+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:00.102+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:00.909+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:01.911+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:02.914+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:03.858+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:04.746+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka: Nome ou serviço desconhecidos
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:05.750+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:06.672+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:07.523+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:08.434+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:09.415+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:10.420+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:11.424+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:12.240+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:13.142+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:14.076+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:15.064+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka: Nome ou serviço desconhecidos
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:16.067+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:17.072+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:18.001+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:47:19.005+01:00  WARN 96567 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Error connecting to node kafka:9092 (id: 1001 rack: null)
+
+java.net.UnknownHostException: kafka
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:124) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.resolveAddresses(ClusterConnectionStates.java:536) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:511) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:466) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1070) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:320) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1252) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1512) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1455) ~[kafka-clients-3.8.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-12T19:56:39.656+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : Starting RestApplication using Java 21.0.2 with PID 105126 (/home/kaufman/IntelliJProjects/kafka-rest-api/rest/target/classes started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api)
+2025-05-12T19:56:39.658+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T19:56:39.692+01:00  INFO 105126 --- [rest] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-12T19:56:39.692+01:00  INFO 105126 --- [rest] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-12T19:56:40.445+01:00  INFO 105126 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-12T19:56:40.456+01:00  INFO 105126 --- [rest] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-12T19:56:40.456+01:00  INFO 105126 --- [rest] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-12T19:56:40.480+01:00  INFO 105126 --- [rest] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-12T19:56:40.481+01:00  INFO 105126 --- [rest] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2025-05-12T19:56:40.979+01:00  WARN 105126 --- [rest] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-12T19:56:41.017+01:00  INFO 105126 --- [rest] [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-12T19:56:41.073+01:00  INFO 105126 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T19:56:41.075+01:00  INFO 105126 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T19:56:41.075+01:00  INFO 105126 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747076201072
+2025-05-12T19:56:41.373+01:00  WARN 105126 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2025-05-12T19:56:41.379+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for rest-admin-0 unregistered
+2025-05-12T19:56:41.384+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-12T19:56:41.384+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12T19:56:41.384+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-12T19:56:41.396+01:00  INFO 105126 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-12T19:56:41.405+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : Started RestApplication in 2.108 seconds (process running for 2.62)
+2025-05-12T19:56:48.392+01:00  INFO 105126 --- [rest] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 19 class path changes (0 additions, 16 deletions, 3 modifications)
+2025-05-12T19:56:48.396+01:00  INFO 105126 --- [rest] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-12T19:56:48.400+01:00  INFO 105126 --- [rest] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-12T19:56:48.574+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : Starting RestApplication using Java 21.0.2 with PID 105126 (/home/kaufman/IntelliJProjects/kafka-rest-api/rest/target/classes started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api)
+2025-05-12T19:56:48.575+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T19:56:49.036+01:00  INFO 105126 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-12T19:56:49.037+01:00  INFO 105126 --- [rest] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-12T19:56:49.038+01:00  INFO 105126 --- [rest] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-12T19:56:49.054+01:00  INFO 105126 --- [rest] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-12T19:56:49.054+01:00  INFO 105126 --- [rest] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 475 ms
+2025-05-12T19:56:49.339+01:00  WARN 105126 --- [rest] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-12T19:56:49.366+01:00  INFO 105126 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-12T19:56:49.381+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : Started RestApplication in 0.873 seconds (process running for 10.596)
+2025-05-12T19:56:49.388+01:00  INFO 105126 --- [rest] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-12T19:56:51.546+01:00  INFO 105126 --- [rest] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (16 additions, 0 deletions, 0 modifications)
+2025-05-12T19:56:51.547+01:00  INFO 105126 --- [rest] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-12T19:56:51.555+01:00  INFO 105126 --- [rest] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-12T19:56:51.858+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : Starting RestApplication using Java 21.0.2 with PID 105126 (/home/kaufman/IntelliJProjects/kafka-rest-api/rest/target/classes started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api)
+2025-05-12T19:56:51.859+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T19:56:52.437+01:00  INFO 105126 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-12T19:56:52.438+01:00  INFO 105126 --- [rest] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-12T19:56:52.439+01:00  INFO 105126 --- [rest] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-12T19:56:52.449+01:00  INFO 105126 --- [rest] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-12T19:56:52.450+01:00  INFO 105126 --- [rest] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 584 ms
+2025-05-12T19:56:52.688+01:00  WARN 105126 --- [rest] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-12T19:56:52.719+01:00  INFO 105126 --- [rest] [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-admin-1
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-12T19:56:52.732+01:00  INFO 105126 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T19:56:52.735+01:00  INFO 105126 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T19:56:52.735+01:00  INFO 105126 --- [rest] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747076212732
+2025-05-12T19:56:52.781+01:00  WARN 105126 --- [rest] [kafka-admin-client-thread | rest-admin-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-1] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2025-05-12T19:56:52.785+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for rest-admin-1 unregistered
+2025-05-12T19:56:52.806+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-12T19:56:52.807+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12T19:56:52.807+01:00  INFO 105126 --- [rest] [kafka-admin-client-thread | rest-admin-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-12T19:56:52.826+01:00  INFO 105126 --- [rest] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-12T19:56:52.835+01:00  INFO 105126 --- [rest] [restartedMain] com.example.rest.RestApplication         : Started RestApplication in 1.056 seconds (process running for 14.05)
+2025-05-12T19:56:52.838+01:00  INFO 105126 --- [rest] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-12T19:56:59.533+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-12T19:56:59.534+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-12T19:56:59.535+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-12T19:56:59.539+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] c.example.rest.filter.RequestIdFilter    : Incoming request [e93e66d8-c40c-415e-9556-a2a3692d4673]: GET /sum
+2025-05-12T19:56:59.578+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] c.e.r.service.Impl.OperationServiceImpl  : Calculating operation sum: Operation(a=1.3, b=2.7, type=SUM, result=null)
+2025-05-12T19:56:59.579+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] c.e.r.s.I.OperationProducerServiceImpl   : Operation event => OperationEvent(message=sum request, operation=Operation(a=1.3, b=2.7, type=SUM, result=4.0))
+2025-05-12T19:56:59.615+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-05-12T19:56:59.639+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-05-12T19:56:59.655+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=rest-producer-1] Instantiated an idempotent producer.
+2025-05-12T19:56:59.674+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T19:56:59.675+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T19:56:59.675+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747076219674
+2025-05-12T19:56:59.685+01:00  INFO 105126 --- [rest] [kafka-producer-network-thread | rest-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=rest-producer-1] Cluster ID: gUnYec9TSJyBlJ82OCv1dw
+2025-05-12T19:56:59.688+01:00  INFO 105126 --- [rest] [kafka-producer-network-thread | rest-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=rest-producer-1] ProducerId set to 0 with epoch 0
+2025-05-12T19:56:59.759+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-1] c.example.rest.filter.RequestIdFilter    : Completed request [e93e66d8-c40c-415e-9556-a2a3692d4673]: status=200
+2025-05-12T19:57:02.284+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-5] c.example.rest.filter.RequestIdFilter    : Incoming request [9dc825ae-4d03-4266-b9b2-aa034407ae11]: GET /subtraction
+2025-05-12T19:57:02.286+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-5] c.e.r.service.Impl.OperationServiceImpl  : Calculating operation subtract: Operation(a=7.2, b=2, type=SUBTRACT, result=null)
+2025-05-12T19:57:02.287+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-5] c.e.r.s.I.OperationProducerServiceImpl   : Operation event => OperationEvent(message=subtraction request, operation=Operation(a=7.2, b=2, type=SUBTRACT, result=5.2))
+2025-05-12T19:57:02.289+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-5] c.example.rest.filter.RequestIdFilter    : Completed request [9dc825ae-4d03-4266-b9b2-aa034407ae11]: status=200
+2025-05-12T19:57:04.043+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-3] c.example.rest.filter.RequestIdFilter    : Incoming request [67b0af0c-477c-4684-ac4e-7b65c3f9dd72]: GET /multiplication
+2025-05-12T19:57:04.045+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-3] c.e.r.service.Impl.OperationServiceImpl  : Calculating operation multiply: Operation(a=5, b=3.3, type=MULTIPLY, result=null)
+2025-05-12T19:57:04.045+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-3] c.e.r.s.I.OperationProducerServiceImpl   : Operation event => OperationEvent(message=multiplication request, operation=Operation(a=5, b=3.3, type=MULTIPLY, result=16.5))
+2025-05-12T19:57:04.047+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-3] c.example.rest.filter.RequestIdFilter    : Completed request [67b0af0c-477c-4684-ac4e-7b65c3f9dd72]: status=200
+2025-05-12T19:57:05.742+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-6] c.example.rest.filter.RequestIdFilter    : Incoming request [d583dc29-7a17-4f02-bdf1-15db7f1c247f]: GET /division
+2025-05-12T19:57:05.743+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-6] c.e.r.service.Impl.OperationServiceImpl  : Calculating operation divide: Operation(a=5, b=3, type=DIVIDE, result=null)
+2025-05-12T19:57:05.743+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-6] c.e.r.s.I.OperationProducerServiceImpl   : Operation event => OperationEvent(message=division request, operation=Operation(a=5, b=3, type=DIVIDE, result=1.666666667))
+2025-05-12T19:57:05.745+01:00  INFO 105126 --- [rest] [http-nio-8080-exec-6] c.example.rest.filter.RequestIdFilter    : Completed request [d583dc29-7a17-4f02-bdf1-15db7f1c247f]: status=200
+2025-05-12T19:57:23.662+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-12T19:57:23.663+01:00  INFO 105126 --- [rest] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-12T19:57:23.665+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=rest-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-05-12T19:57:23.670+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-12T19:57:23.670+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12T19:57:23.670+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-05-12T19:57:23.670+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-12T19:57:23.671+01:00  INFO 105126 --- [rest] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for rest-producer-1 unregistered

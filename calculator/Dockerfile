@@ -1,5 +1,17 @@
-FROM eclipse-temurin:17-jdk-alpine
+# Use an official OpenJDK 17 JDK slim image as the base
+FROM openjdk:17-jdk-slim
+
+# Add metadata to the image
+LABEL authors="bohdan"
+
+# Set the working directory to /app
 WORKDIR /app
-ARG JAR_FILE
-COPY ${JAR_FILE} /app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
+# Create a volume mount point at /tmp
+VOLUME /tmp
+
+# Copy all JAR files from the target directory into the container as app.jar
+COPY ./target/calculator-0.0.1-SNAPSHOT.jar /app
+
+# Specify the command to run on container startup
+CMD ["java", "-jar", "calculator-0.0.1-SNAPSHOT.jar"]
