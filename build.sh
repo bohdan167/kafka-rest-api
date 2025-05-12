@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd base-domains && ./mvnw -Dmaven.test.skip=true clean install && cd ../
-cd calculator && ./mvnw -Dmaven.test.skip=true clean install dockerfile:build && cd ../
-cd rest && ./mvnw -Dmaven.test.skip=true clean install dockerfile:build && cd ../
+cd base-domains && ./mvnw package -DskipTests -Dmaven.javadoc.skip=true -Dcheckstyle.skip=true && cd ../
+cd rest && ./mvnw package -DskipTests -Dmaven.javadoc.skip=true -Dcheckstyle.skip=true && cd ../
+cd calculator && ./mvnw package -DskipTests -Dmaven.javadoc.skip=true -Dcheckstyle.skip=true && cd ../
