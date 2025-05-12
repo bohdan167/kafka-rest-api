@@ -1,4 +1,4 @@
-package com.example.rest;
+package com.example.rest.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -13,11 +13,13 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.UUID;
 
+import static io.spring.training.boot.basedomains.constant.RequestIdValues.REQUEST_ID_HEADER;
+import static io.spring.training.boot.basedomains.constant.RequestIdValues.REQUEST_ID_KEY;
+
 @Component
 public class RequestIdFilter extends OncePerRequestFilter {
 
-    private static final Logger logger = LoggerFactory.getLogger(RequestIdFilter.class);
-    public static final String REQUEST_ID_HEADER = "X-Request-ID";
+    private static final Logger LOGGER = LoggerFactory.getLogger(RequestIdFilter.class);
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -25,16 +27,16 @@ public class RequestIdFilter extends OncePerRequestFilter {
                                     FilterChain filterChain) throws ServletException, IOException {
 
         String requestId = UUID.randomUUID().toString();
-        MDC.put("requestId", requestId);
+        MDC.put(REQUEST_ID_KEY, requestId);
         request.setAttribute(REQUEST_ID_HEADER, requestId);
         response.setHeader(REQUEST_ID_HEADER, requestId);
 
-        logger.info("Incoming request [{}]: {} {}", requestId, request.getMethod(), request.getRequestURI());
+        LOGGER.info("Incoming request [{}]: {} {}", requestId, request.getMethod(), request.getRequestURI());
 
         try {
             filterChain.doFilter(request, response);
         } finally {
-            logger.info("Completed request [{}]: status={}", requestId, response.getStatus());
+            LOGGER.info("Completed request [{}]: status={}", requestId, response.getStatus());
             MDC.clear();
         }
     }

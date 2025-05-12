@@ -1,0 +1,912 @@
+2025-05-12T18:28:17.918+01:00  INFO 29505 --- [rest] [main] com.example.rest.RestApplicationTests    : Starting RestApplicationTests using Java 21.0.2 with PID 29505 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/rest)
+2025-05-12T18:28:17.919+01:00  INFO 29505 --- [rest] [main] com.example.rest.RestApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T18:28:19.086+01:00  INFO 29505 --- [rest] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-12T18:28:19.216+01:00  INFO 29505 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T18:28:19.217+01:00  INFO 29505 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T18:28:19.217+01:00  INFO 29505 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747070899215
+2025-05-12T18:28:19.247+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:19.249+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:19.352+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:19.353+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:19.454+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:19.455+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:19.659+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:19.662+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:20.069+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:20.072+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:21.080+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:21.081+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:22.087+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:22.089+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:23.100+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:23.103+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:24.014+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:24.016+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:24.923+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:24.924+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:25.935+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:25.938+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:26.948+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:26.949+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:27.967+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:27.970+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:28.979+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:28.980+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:29.990+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:29.992+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:31.003+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:31.005+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:31.914+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:31.916+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:32.826+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:32.828+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:33.736+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:33.737+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:34.643+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:34.644+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:35.549+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:35.549+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:36.554+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:36.555+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:37.562+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:37.563+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:38.571+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:38.572+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:39.579+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:39.579+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:40.587+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:40.587+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:41.597+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:41.599+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:42.610+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:42.612+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:43.624+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:43.626+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:44.636+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:44.637+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:45.543+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:45.544+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:46.450+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:46.450+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:47.356+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:47.356+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:48.263+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:48.265+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:49.220+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=rest-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+
+2025-05-12T18:28:49.236+01:00 ERROR 29505 --- [rest] [main] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:571) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1707) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:550) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:443) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:276) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:245) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1149) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095) ~[na:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180) ~[kafka-clients-3.8.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:553) ~[spring-kafka-3.3.5.jar:3.3.5]
+	... 96 common frames omitted
+
+2025-05-12T18:28:49.346+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:49.347+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:50.355+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:50.356+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:51.260+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:51.260+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:52.167+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:52.168+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:53.078+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:53.080+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:54.091+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:54.093+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:55.103+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:55.105+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:56.112+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:56.113+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:57.120+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:57.121+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:58.125+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:58.125+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:59.131+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:28:59.132+01:00  WARN 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:28:59.243+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2025-05-12T18:28:59.244+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for rest-admin-0 unregistered
+2025-05-12T18:28:59.245+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=rest-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+
+2025-05-12T18:28:59.246+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] Timed out 2 remaining operation(s) during close.
+2025-05-12T18:28:59.250+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-12T18:28:59.251+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12T18:28:59.251+01:00  INFO 29505 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-12T18:28:59.261+01:00  INFO 29505 --- [rest] [main] com.example.rest.RestApplicationTests    : Started RestApplicationTests in 41.612 seconds (process running for 42.631)
+2025-05-12T18:56:12.635+01:00  INFO 65516 --- [rest] [main] com.example.rest.RestApplicationTests    : Starting RestApplicationTests using Java 21.0.2 with PID 65516 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/rest)
+2025-05-12T18:56:12.636+01:00  INFO 65516 --- [rest] [main] com.example.rest.RestApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T18:56:13.577+01:00  INFO 65516 --- [rest] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-12T18:56:13.695+01:00  INFO 65516 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T18:56:13.696+01:00  INFO 65516 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T18:56:13.697+01:00  INFO 65516 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747072573694
+2025-05-12T18:56:13.731+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:13.733+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:13.839+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:13.842+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:13.948+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:13.950+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:14.155+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:14.158+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:14.665+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:14.665+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:15.473+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:15.475+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:16.487+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:16.489+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:17.502+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:17.504+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:18.517+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:18.519+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:19.531+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:19.531+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:20.538+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:20.539+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:21.444+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:21.444+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:22.452+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:22.455+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:23.467+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:23.469+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:24.380+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:24.383+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:25.393+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:25.394+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:26.403+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:26.405+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:27.316+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:27.319+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:28.229+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:28.231+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:29.142+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:29.144+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:30.155+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:30.157+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:31.168+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:31.169+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:32.180+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:32.182+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:33.194+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:33.196+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:34.207+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:34.209+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:35.221+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:35.223+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:36.231+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:36.232+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:37.239+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:37.241+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:38.250+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:38.252+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:39.262+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:39.262+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:40.270+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:40.272+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:41.280+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:41.281+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:42.190+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:42.192+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:43.202+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:43.204+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:43.701+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=rest-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+
+2025-05-12T18:56:43.721+01:00 ERROR 65516 --- [rest] [main] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:571) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1707) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:550) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:443) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:276) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:245) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1149) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095) ~[na:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180) ~[kafka-clients-3.8.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:553) ~[spring-kafka-3.3.5.jar:3.3.5]
+	... 96 common frames omitted
+
+2025-05-12T18:56:44.050+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:44.051+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:45.059+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:45.060+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:46.070+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:46.072+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:47.082+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:47.084+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:48.092+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:48.092+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:49.101+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:49.103+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:50.012+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:50.014+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:51.024+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:51.026+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:52.031+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:52.031+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:53.038+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T18:56:53.038+01:00  WARN 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T18:56:53.748+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2025-05-12T18:56:53.751+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for rest-admin-0 unregistered
+2025-05-12T18:56:53.754+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=rest-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+
+2025-05-12T18:56:53.755+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] Timed out 2 remaining operation(s) during close.
+2025-05-12T18:56:53.780+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-12T18:56:53.781+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12T18:56:53.782+01:00  INFO 65516 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-12T18:56:53.792+01:00  INFO 65516 --- [rest] [main] com.example.rest.RestApplicationTests    : Started RestApplicationTests in 41.381 seconds (process running for 42.082)
+2025-05-12T18:56:54.395+01:00  INFO 65516 --- [rest] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.rest.controller.OperationControllerTest]: OperationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-12T18:56:54.423+01:00  INFO 65516 --- [rest] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.rest.RestApplication for test class com.example.rest.controller.OperationControllerTest
+2025-05-12T18:56:54.428+01:00  INFO 65516 --- [rest] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-12T18:56:54.464+01:00  INFO 65516 --- [rest] [main] c.e.r.c.OperationControllerTest          : Starting OperationControllerTest using Java 21.0.2 with PID 65516 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/rest)
+2025-05-12T18:56:54.464+01:00  INFO 65516 --- [rest] [main] c.e.r.c.OperationControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T18:56:54.865+01:00  INFO 65516 --- [rest] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-12T18:56:54.865+01:00  INFO 65516 --- [rest] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-12T18:56:54.866+01:00  INFO 65516 --- [rest] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-12T18:56:54.890+01:00  INFO 65516 --- [rest] [main] c.e.r.c.OperationControllerTest          : Started OperationControllerTest in 0.462 seconds (process running for 43.18)
+2025-05-12T18:56:54.946+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [e26aeac8-18cf-4f3a-833b-92b80707fcca]: GET /subtraction
+2025-05-12T18:56:55.032+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [e26aeac8-18cf-4f3a-833b-92b80707fcca]: status=200
+2025-05-12T18:56:55.078+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [bb2f96ec-4a70-488e-a400-3d170f2023e7]: GET /division
+2025-05-12T18:56:55.080+01:00 ERROR 65516 --- [rest] [main] c.e.rest.controller.OperationController  : Division operation started with zero
+2025-05-12T18:56:55.081+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [bb2f96ec-4a70-488e-a400-3d170f2023e7]: status=400
+2025-05-12T18:56:55.089+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [70ac1f16-cf21-4e9e-92d5-0d5b5fcae55e]: GET /multiplication
+2025-05-12T18:56:55.091+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [70ac1f16-cf21-4e9e-92d5-0d5b5fcae55e]: status=200
+2025-05-12T18:56:55.099+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [368b6f3a-4c5c-4bf8-b50f-412ffe436a49]: GET /division
+2025-05-12T18:56:55.101+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [368b6f3a-4c5c-4bf8-b50f-412ffe436a49]: status=200
+2025-05-12T18:56:55.109+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [ad3352e2-cf55-4f83-9886-b7b96afedf1f]: GET /sum
+2025-05-12T18:56:55.111+01:00  INFO 65516 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [ad3352e2-cf55-4f83-9886-b7b96afedf1f]: status=200
+2025-05-12T19:01:17.066+01:00  INFO 70870 --- [rest] [main] com.example.rest.RestApplicationTests    : Starting RestApplicationTests using Java 21.0.2 with PID 70870 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/rest)
+2025-05-12T19:01:17.068+01:00  INFO 70870 --- [rest] [main] com.example.rest.RestApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T19:01:18.208+01:00  INFO 70870 --- [rest] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = rest-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-12T19:01:18.353+01:00  INFO 70870 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-05-12T19:01:18.354+01:00  INFO 70870 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-05-12T19:01:18.354+01:00  INFO 70870 --- [rest] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1747072878352
+2025-05-12T19:01:18.382+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:18.383+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:18.489+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:18.492+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:18.597+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:18.598+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:18.905+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:18.907+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:19.313+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:19.316+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:20.026+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:20.028+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:21.038+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:21.038+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:22.045+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:22.047+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:23.058+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:23.060+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:24.071+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:24.071+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:25.080+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:25.083+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:26.094+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:26.096+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:27.008+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:27.010+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:27.921+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:27.923+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:28.934+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:28.936+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:29.847+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:29.849+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:30.857+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:30.858+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:31.866+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:31.869+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:32.879+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:32.879+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:33.887+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:33.887+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:34.897+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:34.899+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:35.909+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:35.910+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:36.916+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:36.918+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:37.930+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:37.932+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:38.841+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:38.843+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:39.854+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:39.856+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:40.864+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:40.865+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:41.873+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:41.876+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:42.784+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:42.785+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:43.793+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:43.795+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:44.804+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:44.806+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:45.814+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:45.815+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:46.721+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:46.721+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:47.727+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:47.727+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:48.367+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=rest-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+
+2025-05-12T19:01:48.371+01:00 ERROR 70870 --- [rest] [main] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:571) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1707) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:550) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:443) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:276) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:245) ~[spring-kafka-3.3.5.jar:3.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1149) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.4.5.jar:3.4.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.6.jar:6.2.6]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095) ~[na:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180) ~[kafka-clients-3.8.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:553) ~[spring-kafka-3.3.5.jar:3.3.5]
+	... 96 common frames omitted
+
+2025-05-12T19:01:48.783+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:48.784+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:49.792+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:49.794+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:50.806+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:50.807+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:51.813+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:51.813+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:52.821+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:52.823+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:53.834+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:53.836+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:54.846+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:54.848+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:55.856+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:55.857+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:56.863+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:56.863+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:57.869+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Node -1 disconnected.
+2025-05-12T19:01:57.870+01:00  WARN 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=rest-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-05-12T19:01:58.381+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2025-05-12T19:01:58.386+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for rest-admin-0 unregistered
+2025-05-12T19:01:58.389+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=rest-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+
+2025-05-12T19:01:58.391+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=rest-admin-0] Timed out 2 remaining operation(s) during close.
+2025-05-12T19:01:58.403+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-12T19:01:58.403+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-12T19:01:58.404+01:00  INFO 70870 --- [rest] [kafka-admin-client-thread | rest-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-12T19:01:58.417+01:00  INFO 70870 --- [rest] [main] com.example.rest.RestApplicationTests    : Started RestApplicationTests in 41.639 seconds (process running for 42.481)
+2025-05-12T19:01:59.037+01:00  INFO 70870 --- [rest] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.rest.controller.OperationControllerTest]: OperationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-12T19:01:59.071+01:00  INFO 70870 --- [rest] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.rest.RestApplication for test class com.example.rest.controller.OperationControllerTest
+2025-05-12T19:01:59.075+01:00  INFO 70870 --- [rest] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-12T19:01:59.109+01:00  INFO 70870 --- [rest] [main] c.e.r.c.OperationControllerTest          : Starting OperationControllerTest using Java 21.0.2 with PID 70870 (started by kaufman in /home/kaufman/IntelliJProjects/kafka-rest-api/rest)
+2025-05-12T19:01:59.109+01:00  INFO 70870 --- [rest] [main] c.e.r.c.OperationControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-05-12T19:01:59.545+01:00  INFO 70870 --- [rest] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-12T19:01:59.546+01:00  INFO 70870 --- [rest] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-12T19:01:59.547+01:00  INFO 70870 --- [rest] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-12T19:01:59.561+01:00  INFO 70870 --- [rest] [main] c.e.r.c.OperationControllerTest          : Started OperationControllerTest in 0.487 seconds (process running for 43.626)
+2025-05-12T19:01:59.610+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [b88ef72d-f488-4a0c-9821-2d6b8349379e]: GET /subtraction
+2025-05-12T19:01:59.709+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [b88ef72d-f488-4a0c-9821-2d6b8349379e]: status=200
+2025-05-12T19:01:59.761+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [ac8c21f5-6f49-4199-a62b-442145867584]: GET /division
+2025-05-12T19:01:59.763+01:00 ERROR 70870 --- [rest] [main] c.e.rest.controller.OperationController  : Division operation started with zero
+2025-05-12T19:01:59.764+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [ac8c21f5-6f49-4199-a62b-442145867584]: status=400
+2025-05-12T19:01:59.772+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [be49fed3-b5fb-40b7-9703-eceb5269382b]: GET /multiplication
+2025-05-12T19:01:59.774+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [be49fed3-b5fb-40b7-9703-eceb5269382b]: status=200
+2025-05-12T19:01:59.784+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [7e86fee0-905f-40d8-a651-edc9665cfe49]: GET /division
+2025-05-12T19:01:59.787+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [7e86fee0-905f-40d8-a651-edc9665cfe49]: status=200
+2025-05-12T19:01:59.796+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Incoming request [7a1c6436-871e-4e74-bc7f-1dc42651e5c1]: GET /sum
+2025-05-12T19:01:59.799+01:00  INFO 70870 --- [rest] [main] c.example.rest.filter.RequestIdFilter    : Completed request [7a1c6436-871e-4e74-bc7f-1dc42651e5c1]: status=200
